@@ -7,7 +7,7 @@
    <style>
 body {
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 	background-color: #141414;
 }
 a {
@@ -92,7 +92,7 @@ img {
 .page {
 	margin: auto auto 4em auto;
 	width: 48%;
-	/* to change the page's height, see the .pagebottom */
+	/* to change the page's height, see .pagebottom */
 	background-color: rgba(253, 0, 252, 1);
 	background-image: linear-gradient(rgba(255, 248, 160, 1) 80%, rgba(255, 255, 255, 1));
 }
@@ -113,6 +113,7 @@ img {
 	width: 500px;
 	font-size: 45px;
 	font-weight: bold;
+	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 .websitetitle a {
 	text-decoration: none;
@@ -145,7 +146,7 @@ img {
 	padding: 7px 10px 0 10px;
 	border-start-end-radius: 500px 20px;
 	font-family: "Courier New", Courier, monospace;
-	background-image: linear-gradient(rgba(255, 248, 160, 1) 20%, rgba(255, 248, 160, 0));
+	background-image: linear-gradient(rgba(255, 248, 160, 1) 40%, rgba(255, 248, 160, 0));
 }
 .content {
 	margin: -25px -2px 0 30px;
@@ -162,6 +163,7 @@ img {
 	margin: -20px 0 0 0;
 	padding: 0;
 	font-size: 23px;
+	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 	list-style-type: none;
 }
 .links li {	
@@ -305,6 +307,8 @@ img {
     </h1>
     
     <p>This is the base code for <i>Hypnospace Outlaw Theme</i>. <a href="https://raw.githubusercontent.com/astronautiic/ramthemes/main/hypnospaceoutlaw">The code is available here.</a></p>
+    
+    <p>See it in use <a href="https://ranmpy.neocities.org/themes/hypnospace">here</a>. If you know a better way of coding this, <a href="https://github.com/astronautiic/ramthemes/blob/main/hypnospaceoutlaw">contribute here</a>.</p>
     
     <center><img src="/img/hypnospace/people.png" width="205px" height="175px"></center>
     
