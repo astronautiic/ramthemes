@@ -86,14 +86,17 @@ img {
 /* section end */
 
 /* section: hypnospace page */
+/* to make things easier to change, colors that control gradients are in rgba (a controls opacity, 0 is transparent and 1 is solid*/
 
+/* hypnospace page container */
 .page {
 	margin: auto auto 4em auto;
 	width: 48%;
-	height: 100%;
-	background-color: #fd00fc;
-	background-image: linear-gradient(#fff8a0 80%, #EBE4DD);
+	/* to change the page's height, see the .pagebottom */
+	background-color: rgba(253, 0, 252, 1);
+	background-image: linear-gradient(rgba(255, 248, 160, 1) 80%, rgba(255, 255, 255, 1));
 }
+/* white highlight at the top of the page */
 .pagetopgradient {
   width: 48%;
   height: 67px;
@@ -103,7 +106,7 @@ img {
 }
 .pagetop {
 	padding: 50px 0 20px 0;
-	background-color: #fd00fc;
+	background-color: rgba(253, 0, 252, 1);
 }
 .websitetitle {
   margin-left: 25px;
@@ -129,21 +132,20 @@ img {
 	content: ' ';
 }
 .pagebottom {
-	height: 100%;
-	padding-bottom: 3px;
-	background-image: linear-gradient(rgba(253, 0, 252,1) 150px, rgba(255, 248, 160,1) 300px, rgba(255, 248, 160,0));
+  height: 100%; /* change page height */
+  padding-bottom: 3px;
+	background-image: linear-gradient(rgba(253, 0, 252, 1) 20%, rgba(255, 248, 160, 1) 40%, rgba(255, 248, 160, 0));
 }
+/* page content container */
 .pagebody {
   margin-right: 0;
 	margin-left: auto;
 	width: 75%;
-	height: auto;
-	padding: 7px 10px 10px 10px;
+	height: 98%;
+	padding: 7px 10px 0 10px;
 	border-start-end-radius: 500px 20px;
 	font-family: "Courier New", Courier, monospace;
-	background-color: #fff8a0;
-	background-image: linear-gradient(#fff8a0 80%, #EBE4DD);
-	
+	background-image: linear-gradient(rgba(255, 248, 160, 1) 20%, rgba(255, 248, 160, 0));
 }
 .content {
 	margin: -25px -2px 0 30px;
@@ -171,14 +173,14 @@ img {
 	font-weight: bold;
 	text-align: center;
 	color: #222034;
-	background-color: #57d403;
-	background-image: radial-gradient(farthest-corner at 50% 25%, #8EF544, #4CC205, #327D0A);
+	background-color: #8EF544;
+	background-image: radial-gradient(farthest-corner at 50% 25%, #8EF544, #4CC205, #327D0A); /* various shades of green, add or remove colors as you'd like */
 }
 .links li:hover {
 	overflow: hidden;
 	color: white;
 	background-color: red;
-	background-image: radial-gradient(farthest-corner at 50% 25%, red, Maroon);
+	background-image: radial-gradient(farthest-corner at 50% 25%, red, maroon); /* various shades of red, add or remove colors as you'd like */
 }
 .links a:hover {
   text-decoration: none;
