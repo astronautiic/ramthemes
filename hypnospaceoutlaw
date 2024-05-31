@@ -13,6 +13,10 @@ body {
 a {
 	text-decoration: none;
 	font-weight: bold;
+	color: #852a68;
+}
+a:visited {
+  color: #852a68;
 }
 a:hover {
   text-decoration: underline;
