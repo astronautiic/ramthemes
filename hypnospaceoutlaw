@@ -9,17 +9,19 @@ body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
 	background-color: #141414;
+	cursor: url("/img/hypnospace/arrow.png"), auto;
 }
 a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #852a68;
+	color: #852a68; /* change the colors of links */
 }
 a:visited {
-  color: #852a68;
+  color: #852a68; /* keeps links the same color, even if you've clicked on them before */
 }
 a:hover {
   text-decoration: underline;
+  cursor: url("/img/hypnospace/hover.png"), auto;
 }
 h1, h2, h3 {
 	margin: 0.9em 0 0.5em 0;
@@ -86,15 +88,14 @@ img {
 /* section end */
 
 /* section: hypnospace page */
-/* to make things easier to change, colors that control gradients are in rgba (a controls opacity, 0 is transparent and 1 is solid*/
 
 /* hypnospace page container */
 .page {
 	margin: auto auto 4em auto;
 	width: 48%;
 	/* to change the page's height, see .pagebottom */
-	background-color: rgba(253, 0, 252, 1);
-	background-image: linear-gradient(rgba(255, 248, 160, 1) 80%, rgba(255, 255, 255, 1));
+	background-color: #fd00fc;
+	background-image: linear-gradient(#fff8a0 80%, rgba(255, 255, 255, 1));
 }
 /* white highlight at the top of the page */
 .pagetopgradient {
@@ -102,11 +103,11 @@ img {
   height: 67px;
   position: absolute;
   border-bottom-left-radius: 100% 70px;
-  background-image: linear-gradient(to right, rgba(255,255,255,.4) 20%, rgba(255,255,255,.8));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.8));
 }
 .pagetop {
 	padding: 50px 0 20px 0;
-	background-color: rgba(253, 0, 252, 1);
+	background-color: #fd00fc;
 }
 .websitetitle {
   margin-left: 25px;
@@ -135,7 +136,7 @@ img {
 .pagebottom {
   height: 100%; /* change page height */
   padding-bottom: 3px;
-	background-image: linear-gradient(rgba(253, 0, 252, 1) 20%, rgba(255, 248, 160, 1) 40%, rgba(255, 248, 160, 0));
+	background-image: linear-gradient(#fd00fc 10%, #fff8a0 27%, rgba(255, 255, 255, 0)); /* this is the gradient on the left, below the side links */
 }
 /* page content container */
 .pagebody {
@@ -146,12 +147,12 @@ img {
 	padding: 7px 10px 0 10px;
 	border-start-end-radius: 500px 20px;
 	font-family: "Courier New", Courier, monospace;
-	background-image: linear-gradient(rgba(255, 248, 160, 1) 40%, rgba(255, 248, 160, 0));
+	background-image: linear-gradient(#fff8a0 50%, rgba(255, 255, 255, 0));
 }
 .content {
 	margin: -25px -2px 0 30px;
 	font-size: 1em;
-	color: #852a68;
+	color: #852a68; /* change page content text color */
 }
 
 /* side links */
@@ -174,15 +175,15 @@ img {
 	padding: 10px 30px;
 	font-weight: bold;
 	text-align: center;
-	color: #222034;
+	color: #222034; /* side links text color */
 	background-color: #8EF544;
-	background-image: radial-gradient(farthest-corner at 50% 25%, #8EF544, #4CC205, #327D0A); /* various shades of green, add or remove colors as you'd like */
+	background-image: radial-gradient(farthest-corner at 50% 25%, #8ef544, #4cc205, #327d0a); /* side links background: various shades of green, add or remove colors as you'd like */
 }
 .links li:hover {
 	overflow: hidden;
-	color: white;
+	color: #ffffff;
 	background-color: red;
-	background-image: radial-gradient(farthest-corner at 50% 25%, red, maroon); /* various shades of red, add or remove colors as you'd like */
+	background-image: radial-gradient(farthest-corner at 50% 25%, red, maroon); /* background color when hovered. various shades of red, add or remove colors as you'd like */
 }
 .links a:hover {
   text-decoration: none;
@@ -203,7 +204,7 @@ img {
 	width: 170px;
 	height: 20px;
 	border-radius: 30px;
-	background-image: linear-gradient(rgba(245,250,237,1) 20%, rgba(245,250,237,0));
+	background-image: linear-gradient(#f5faed 20%, rgba(255, 255, 255, 0));
 	content: ' ';
 }
 /* section end */
@@ -235,10 +236,10 @@ img {
 	.links {
 	  position: absolute;
 		overflow: hidden;
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 	.links li {
-		width: 70px;
+		width: 80px;
 		height: 20px;
 	}
 	.highlight {
@@ -301,46 +302,53 @@ img {
   </nav>
 
   <div class="pagebody">
-  <div class="content"> <!-- write page text here -->
-    <h1>
-    Page Title Here!
-    </h1>
-    
-    <p>This is the base code for <i>Hypnospace Outlaw Theme</i>. <a href="https://raw.githubusercontent.com/astronautiic/ramthemes/main/hypnospaceoutlaw">The code is available here.</a></p>
-    
-    <p>See it in use <a href="https://ranmpy.neocities.org/themes/hypnospace">here</a>. If you know a better way of coding this, <a href="https://github.com/astronautiic/ramthemes/blob/main/hypnospaceoutlaw">contribute here</a>.</p>
-    
-    <center><img src="/img/hypnospace/people.png" width="205px" height="175px"></center>
-    
-    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
-
-    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
-
-    <p>Here's how you can add an image:</p>
-    <img src="/img/neocities.png">
-
-    <p>Here's how to make a list:</p>
-
-    <ul>
-      <li>First thing</li>
-      <li>Second thing</li>
-      <li>Third thing</li>
-    </ul>
-
-    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
-    
-    <h2>Resources</h2>
-    <ul>
-      <li><a href="https://www.spriters-resource.com/pc_computer/hypnospaceoutlaw/">The Spriters Resource</a></li>
-      <li><a href="https://www.reddit.com/r/neocities/comments/p2ohhf/martindisks_messy_guide_to_having_custom_fonts_on/">How to add custom fonts</a></li>
-    </ul>
-    
-  </div>
+    <div class="content"> <!-- write page text here -->
+      <h1>
+      Page Title Here!
+      </h1>
+      
+      <p>This is the base code for <i>Hypnospace Outlaw Theme</i>. <a href="https://raw.githubusercontent.com/astronautiic/ramthemes/main/hypnospaceoutlaw">The code is available here.</a></p>
+      
+      <p>Download the assets <a href="https://github.com/astronautiic/ramthemes/raw/main/hypnospace.zip" download>here</a>.
+      <br>The assets are linked using relative paths. If you don't want to change the image links, follow these instructions:</p>
+      
+      <ol>
+        <li>In the Neocities "Home" menu, create a folder named "img"</li>
+        <li>Inside that folder, create another folder named "hypnospace"</li>
+        <li>Upload the assets into the "hypnospace" folder</li>
+      </ol>
+      
+      <p>See the theme in use <a href="https://ranmpy.neocities.org/themes/hypnospace">here</a>. If you know a better way of coding this, <a href="https://github.com/astronautiic/ramthemes/blob/main/hypnospaceoutlaw">contribute here</a>.</p>
+      
+      <center><img src="/img/hypnospace/people.png" width="205px" height="175px"></center>
+      
+      <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
   
+      <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+  
+      <p>Here's how you can add an image:</p>
+      <img src="/neocities.png">
+  
+      <p>Here's how to make a list:</p>
+  
+      <ul>
+        <li>First thing</li>
+        <li>Second thing</li>
+        <li>Third thing</li>
+      </ul>
+  
+      <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+      
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.spriters-resource.com/pc_computer/hypnospaceoutlaw/">The Spriters Resource</a></li>
+        <li><a href="https://www.reddit.com/r/neocities/comments/p2ohhf/martindisks_messy_guide_to_having_custom_fonts_on/">How to add custom fonts</a></li>
+        <li><a href="https://kiunlo.neocities.org/cursors">How to add custom cursors (plus some freebies)</a></li>
+      </ul>
+      
+    </div>
   </div>
 </div>
-
-
 </div>
   </body>
 </html>
