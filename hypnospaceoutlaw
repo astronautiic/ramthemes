@@ -58,7 +58,7 @@ img {
 	text-transform: none;
 }
 .statusitems > div {
-	box-shadow: 2px 2px 0 #312454;
+	box-shadow: 2px 2px 0 #312454; /* shadow below emote box and status */
 }
 .icon {
 	width: 75px;
@@ -91,11 +91,11 @@ img {
 
 /* hypnospace page container */
 .page {
-	margin: auto auto 4em auto;
+	margin: auto auto 50px auto;
 	width: 48%;
 	/* to change the page's height, see .pagebottom */
 	background-color: #fd00fc;
-	background-image: linear-gradient(#fff8a0 80%, rgba(255, 255, 255, 1));
+	background-image: linear-gradient(#fff8a0 80%, #fff); /* second color controls gradient at bottom */
 }
 /* white highlight at the top of the page */
 .pagetopgradient {
@@ -127,7 +127,7 @@ img {
 	top: 153px;
 	right: 395px;
 	left: auto;
-	background-image: /*url("filename.png"),*/ url("/img/hypnospace/spiral.png"); /* change banner/side image, remove the comment tags to add your own image */
+	background-image: /*url("filename.png"),*/ url("/img/hypnospace/bannerbg.png"); /* change banner/side image, remove the comment tags to add your own image */
 	background-repeat: no-repeat;
 	background-position: /*left top,*/ right top; 
 	background-size: /*contain,*/ 115px;
@@ -177,13 +177,12 @@ img {
 	text-align: center;
 	color: #222034; /* side links text color */
 	background-color: #8EF544;
-	background-image: radial-gradient(farthest-corner at 50% 25%, #8ef544, #4cc205, #327d0a); /* side links background: various shades of green, add or remove colors as you'd like */
+	background-image: radial-gradient(farthest-corner at 50% 25%, #8ef544, #4cc205, #327d0a); /* side links background. add or remove colors as you'd like */
 }
 .links li:hover {
 	overflow: hidden;
-	color: #ffffff;
 	background-color: red;
-	background-image: radial-gradient(farthest-corner at 50% 25%, red, maroon); /* background color when hovered. various shades of red, add or remove colors as you'd like */
+	background-image: radial-gradient(farthest-corner at 50% 25%, #d7fc65, #98d405); /* background color when hovered. add or remove colors as you'd like */
 }
 .links a:hover {
   text-decoration: none;
@@ -208,6 +207,14 @@ img {
 	content: ' ';
 }
 /* section end */
+.credit {
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+}
 
 /* mobile */
 @media screen and (max-width: 480px) {
@@ -350,5 +357,6 @@ img {
   </div>
 </div>
 </div>
+<div class="credit"><a href="https://ranmpy.neocities.org" title="theme by ranmpy">✿</a></div> <!-- credit ^_^ please don't remove -->
   </body>
 </html>
