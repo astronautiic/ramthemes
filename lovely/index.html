@@ -18,6 +18,7 @@
       
       --fontsize: 13px; /* font size */
       --textcolor: black; /* text color */
+      --chattextcolor: Grey; /* chat bubble text color */
       --outsidetextcolor: white; /* title text color */
       --linkcolor: PaleVioletRed; /* link colors */
       --hoverlinkcolor: MediumVioletRed; /* link colors when hovered */
@@ -36,13 +37,16 @@
       --moveimagevertical: -50px; /* moves image. positive numbers move it up, negative down */
     }
     
+    html {
+      background-color: var(--backgroundcolor);
+      background-image: var(--backgroundimage);
+      height: 100%; 
+    }
+    
     body {
       margin: 0;
       font-size: var(--fontsize);
       font-family: Arial, sans-serif;
-      background-color: var(--backgroundcolor);
-      background-image: var(--backgroundimage);
-      background-repeat: repeat-x;
       color: var(--textcolor);
     }
     
@@ -56,7 +60,6 @@
     
     a:hover {
       color: var(--hoverlinkcolor);
-      cursor: url("/img/lovely/bunnycursorhover.png"), auto;
     }
     
     i, em {
@@ -104,7 +107,7 @@
       scrollbar-width: thin;
     }
     
-    .container {
+    .boxcontainer {
       display: block;
       margin: var(--fromtop) auto 0;
       width: 700px;
@@ -134,13 +137,13 @@
     
     .chat {
       width: 100%;
-      height: 60px;
+      height: var(--chatboxheight);
       border: 10px solid var(--boxcolors);
       border-radius: 10px;
       overflow-y: auto;
       scrollbar-color: var(--scrollbarcolor) var(--scrollbarbgcolor);
       scrollbar-width: thin;
-      color: DimGray;
+      color: var(--chattextcolor);
       font-size: 12px;
       text-align: center;
       background-color: var(--boxcolors);
@@ -148,7 +151,7 @@
     
     .triangle {
       position: absolute;
-      margin-left: 105px;
+      margin-left: 80px;
       width: 0;
       height: 0;
       border: 9px solid;
@@ -158,7 +161,7 @@
     
     .icon {
       margin-top: 15px;
-      float: right;
+      margin-left: 50px;
       width: 75px;
       height: 75px;
       border-radius: 50%;
@@ -203,7 +206,7 @@
     
     /* mobile */
     @media screen and (max-width: 480px) {
-    .container {
+    .boxcontainer {
       margin: 65px auto;
       width: 90%;
     }
@@ -236,11 +239,12 @@
     }
       
     .main {
+      min-width: 92.5%;
       flex: 100%;
     }
       
     .triangle {
-      margin-left: 81px;
+      margin-left: 79.5px;
     }
     
     .bottomtext {
@@ -249,14 +253,16 @@
     }
     
     .sideimg {
-      z-index: 1;
+      margin-right: 0;
+      margin-bottom: 0;
       max-width: var(--mobileimagesize);
+      z-index: 1;
     }
   }
   </style>
   </head>
   <body>
-    <div class="container">
+    <div class="boxcontainer">
       <div class="toptext">my lovely little palace ^__^</div>
       <div class="box">
         <div class="side">
@@ -282,9 +288,9 @@
         </div>
         
         <div class="main">
-        <p>This is the base code for <i>Lovely</i>. <a href="">The code is available here.</a></p>
+        <p>This is the base code for <i>Lovely</i>. <a href="https://raw.githubusercontent.com/astronautiic/ramthemes/main/lovely/index.html">The code is available here.</a></p>
       
-      <p>Download the assets <a href="" download>here</a>.
+      <p>Download the assets <a href="https://github.com/astronautiic/ramthemes/raw/main/lovely/lovely.zip" download>here</a> (stamps not included<i>!</i>).
       <br>The assets are linked using relative paths. If you don't want to change the image links, follow these instructions:</p>
       
       <ol>
@@ -293,7 +299,9 @@
         <li>Upload the assets into the "lovely" folder</li>
       </ol>
       
-      <p>See the theme in use <a href="https://ranmpy.neocities.org/themes/lovely">here</a>. If you know a better way of coding this, <a href="">contribute here</a>.</p>
+      <p>See the theme in use <a href="https://ranmpy.neocities.org/themes/lovely">here</a>. If you know a better way of coding this, <a href="https://github.com/astronautiic/ramthemes/blob/main/lovely/index.html">contribute here</a>.</p>
+      
+      <p>Lace pattern was created by <a href="https://www.deviantart.com/tigers-stock/art/613-Lace-Lines-1-363078294">Tigers-stock</a>.
       
       <hr>
         
@@ -326,8 +334,19 @@
       </div>
       
       <div class="bottomtext">
-        insert text here or a marquee!
-      </div>
+      <marquee scrollamount="8">
+        <a href="https://www.deviantart.com/krissi001/art/December-1-417097750"><img src="/img/stamps/december.gif" width="64px" height="57px"></a>
+        <a href="https://www.deviantart.com/klaus92/art/Jumping-In-The-Puddle-154972884"><img src="/img/stamps/puddle.gif" width="41px" height="19px"></a>
+        <a href="https://www.deviantart.com/berrynight123-cat/art/stamp-homework-is-suck-583813429"><img src="/img/stamps/homework.png" width="99px" height="57px"></a>
+        <a href="https://www.deviantart.com/naughtcore/art/nightcore-stamp-698186255"><img src="/img/stamps/nightcore.png" width="99px" height="56px"></a>
+        <a href="https://www.deviantart.com/roxy317/art/Stamp-I-m-not-weird-69538256"><img src="/img/stamps/weird.gif" width="99px" height="56px"></a>
+        <a href="https://www.deviantart.com/peachybats/art/egg-stamp-497377630"><img src="/img/stamps/egg.png" width="99px" height="56px"></a>
+        <a href="https://www.deviantart.com/carinareis/art/Coffee-Stamp-86344266"><img src="/img/stamps/coffee.gif" width="99px" height="56px"></a>
+        <a href="https://www.deviantart.com/buniis/art/Ill-Burn-You-723848877"><img src="/img/stamps/burn.png" width="99px" height="55px"></a>
+        <a href="https://www.deviantart.com/busiris/art/The-Log-out-Stamp-57276206"><img src="/img/stamps/logout.png" width="99px" height="56px"></a>
+        <a href="https://www.deviantart.com/busiris/art/New-In-Ur-Stamp-83328217"><img src="/img/stamps/fish.gif" width="99px" height="56px"></a>
+      </marquee>
+        </div>
     </div>
     <div class="sideimg"></div>
     <div class="credit"><a href="https://ranmpy.neocities.org" title="theme by ranmpy">✿</a></div> <!-- credit ^_^ please don't remove -->
